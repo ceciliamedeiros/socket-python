@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Sugestões</title>
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="sugestoes.css" />
+
+</head>
+    <body>
+
+        <section> 
+            <div class="circle"></div>
+        </section>
+    
+        <header>
+            <a href="/" ><img  src="img/logoofc.png" class="logo" alt=""></a>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/receitas.html">Nossas receitas</a></li>
+              <li><a href="/sugestoes.html">Mande sua receita</a></li>
+              <li><a href="/comentarios.html">Nos avalie</a></li>
+            </ul>
+        </header>
+        <br>
+        <div  style="margin-left: 300px" >
+            <h1>Deixe uma sugestão de receita para nós!</h1>
+            <br>
+            <br>
+        </div>
+ 
+    <form style="margin-left: 450px" method="POST" action="/sugestoesPost">
+        <div>Nome da Receita:
+            <br>
+            <input name="nomeReceita" type="text"></input>
+        </div>
+        <br>
+        <div>Tipo de Receita: 
+            <input type="radio" name="tipoReceita" value="Massas"> Massas 
+            <input type="radio" name="tipoReceita" value="Bolos"> Bolos
+            <input  type="radio" name="tipoReceita" value="Drinks"> Drinks
+        </div>
+        <br>
+        <div>
+            Receita:
+            </div><div>
+          <textarea id="texto_receita" name="texto" rows="20" cols="40"></textarea>
+         </div>
+         <br>
+        
+        <button class="form-submit-button">Enviar</button> 
+        <br>
+        <br>
+        <br>
+    </form>
+    
+    
+</body>
+</html>
